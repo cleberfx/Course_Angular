@@ -1,4 +1,13 @@
-PD2
-<h1>{{getId()}}</h1>
+Product Details:
+<!-- <h1>{{getId()}}</h1>
 <h1>{{getName()}}</h1>
-<h1>{{getPrice()}}</h1>
+<h1>{{getPrice()}}</h1> -->
+
+<div *ngFor="let product of products">
+	<h1>{{product.id}}</h1>
+	<h1>{{product.name}}</h1>
+	<h1>{{product.price}}</h1>
+
+</div>
+
+<app-seller></app-seller>
