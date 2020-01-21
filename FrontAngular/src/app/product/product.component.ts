@@ -7,7 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+id:number;
+name:string;
+price:number;
+
+  constructor() {
+
+this.id=1;
+this.name="Mac Book";
+this.price=1300;
+
+  }
+public getId():number{
+return this.id;
+}
+
+public getName():string{
+return this.name;
+}
+
+public getPrice():number{
+return this.price;
+}
 
   ngOnInit() {
   }
